@@ -18,5 +18,8 @@
   "homepage": "https://github.com/vadimys/slot-game#readme",
   "devDependencies": {
     "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "pixi.js": "^6.5.1"
   }
 }

@@ -31,10 +31,10 @@
     "webpack-cli": "^3.3.3",
     "webpack-dev-server": "^3.10.3",
     "webpack-merge": "^4.2.2",
-    "webpack-obfuscator": "^0.27.2"
+    "webpack-obfuscator": "^3.5.1"
   },
   "dependencies": {
     "friendly-errors-webpack-plugin": "^1.7.0",
-    "pixi.js": "^6.5.1"
+    "pixi.js": "^5.3.12"
   }
 }

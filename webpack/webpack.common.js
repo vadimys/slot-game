@@ -1,6 +1,4 @@
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
-const HardSourceWebpackPlugin = require('hard-source-webpack-plugin');
-const { CheckerPlugin } = require('awesome-typescript-loader')
 const path = require('path')
 const build = require('../build.json')
 
@@ -12,7 +10,7 @@ module.exports = {
     module: {
         rules: [{
             test: /\.tsx?$/,
-            loader: 'awesome-typescript-loader',
+            loader: 'ts-loader',
             include: path.join(__dirname, `../${build.sources}`),
             exclude: /node_modules/,
             options: {
@@ -22,8 +20,6 @@ module.exports = {
         }]
     },
     plugins: [
-        new HardSourceWebpackPlugin(),
-        new CheckerPlugin(),
         new ForkTsCheckerWebpackPlugin({
             silent: true,
             checkSyntacticErrors: true

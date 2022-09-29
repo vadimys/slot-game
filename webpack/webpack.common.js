@@ -20,9 +20,6 @@ module.exports = {
         }]
     },
     plugins: [
-        new ForkTsCheckerWebpackPlugin({
-            silent: true,
-            checkSyntacticErrors: true
-        })
+        new ForkTsCheckerWebpackPlugin()
     ]
 }

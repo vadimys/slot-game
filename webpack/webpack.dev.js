@@ -11,7 +11,6 @@ module.exports = merge(common, {
         static: {
             directory: build.assets
         },
-        host: 'local-ip',
         port: '8013',
         client: {
             logging: "info",
